@@ -1,16 +1,17 @@
 console.log('The bot is starting');
 
+var poem = require('./poem');
 var Twit = require('twit');
 var config = require('./config');
 var T = new Twit(config);
 
 tweetIt();
-setInterval(tweetIt, 1000*60*60*24);
+setInterval(tweetIt, 1000*60*60*8);
 
 
 function tweetIt() {
   var tweet = {
-    status: 'hello world!'
+    status: poem.createPoem()
   }
 
   T.post('statuses/update', tweet, tweeted);
