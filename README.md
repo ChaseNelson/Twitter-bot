@@ -1,3 +1,3 @@
 # Twitter-bot
 
-A bot that will post hiaku poems on Twitter ever 6 hours.
+A bot that will post haiku poems on Twitter ever 8 hours.
